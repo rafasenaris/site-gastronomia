@@ -1,15 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
+/*RESET*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/*CLASSES*/
+/*CONFIGURAÇÃO DE TAG P*/
+.config-p{ 
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.config-h1{
+    font-family: "Bungee Inline", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 100;
+}
+
+/*CONFIGURACOES BÁSICAS*/
 body{
     background-color: black;
     color: white;
+    font-family: "Josefin Sans", sans-serif;
 }
+
+
+/*CABEÇALHO, MENU E ITENS DE MENU*/
 header{
     position: absolute;
     top: 0;
@@ -23,7 +40,6 @@ header{
     justify-content: space-between;
     background-color: black;
     opacity: 0.9;
-    
 }
 
 menu{
@@ -36,9 +52,10 @@ menu{
 menu a{
     color: white;
     text-decoration: none;
-    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
 }
 
+/*CONFIGURAÇÃO DA MAIN E SEUS ELEMENTOS*/
 #principal{
     position: inherit;
     height: 100vh;
@@ -58,15 +75,21 @@ menu a{
 }
 #principal h1{
     font-family: "Bungee Inline", sans-serif;
-    color: white;
     font-weight: 300;
-    font-size: 50pt;
+    font-size: 4rem;
 }
 
+/*CONFIGURAÇÃO DA SECTION SOBRE E SEUS ELEMENTOS*/
 #sobre{
     height: 100vh; /*alterar para valor fixo*/
-    background-color: white;
-    color: black;
+    background-color: rgb(15, 15, 34);
+    color: white;
+}
+#sobre-texto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10% 15% 10% 15%;
 }
 
 #ambiente{
