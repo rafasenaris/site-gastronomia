@@ -87,6 +87,9 @@ menu a{
 /*CONFIGURAÇÃO DA SECTION SOBRE E SEUS ELEMENTOS*/
 #sobre{
     height: 100vh; /*alterar para valor fixo*/
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
     background-color: #012340;
     color: white;
 }
@@ -94,6 +97,16 @@ menu a{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    max-width: 35%;
+}
+#sobre-imagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 60%;
+}
+#sobre-imagem img{
+    width: 100%;
 }
 
 #ambiente{
