@@ -15,4 +15,4 @@ export class header extends HTMLElement {
         `;
     }
 }
-customElements.define('meu-cabecalho', header);
+customElements.define('main-cabecalho', header);
